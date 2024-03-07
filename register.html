@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register Form Design</title>
+    <link rel="stylesheet" type="text/css"href="stylesheet.css">
+</head>
+<style>
+  
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('images/image14.jpg') center/cover; /* Replace 'your-background-image.jpg' with the actual path to your background image */
+}
+
+.box {
+    width: 300px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9); /* Use rgba to add some transparency to the background color */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards, changeColor 3s infinite alternate; /* Add color animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes changeColor {
+    from {
+        background-color: #3498db;
+    }
+
+    to {
+        background-color: #ffcc00;
+    }
+}
+
+.user {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    text-align: left;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    animation: buttonScale 0.3s ease-out forwards; /* Add button animation */
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+@keyframes buttonScale {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+
+</style>
+
+<body>
+
+    <div class="box">
+       <img src="images/as1.png" class="user" alt="User Icon"> <!-- Replace 'path/to/your-icon.png' with the actual path to your icon image -->
+        <h1>Register Here</h1>
+
+        <form name="myform2" action="register.php" method="POST">
+
+            <p>Username</p>
+            <input type="text" name="uname1" placeholder="Enter Username" required="">
+
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Enter email id" required="">
+
+            <p>Password</p>
+            <input type="password" name="upswd1" placeholder="Enter Password" required="">
+
+            <p>Retype Password</p>
+            <input type="password" name="upswd2" placeholder="Re-Enter Password" required="">
+
+            <input type="submit" name="" value="Register">
+
+            <br><br>
+            <a href="login.html">Existing user, login !?</a>
+        </form>
+
+    </div>
+     
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<style>
+    /* Input Styles */
+    input {
+        width: 300px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        border: 1px white solid;
+        border-left: 10px gray solid;
+        height: 30px; /* Adjusted height for better consistency */
+        padding: 5px; /* Added padding for better spacing */
+        transition: border-left 0.3s ease, transform 0.3s ease; /* Smooth transitions for border-left and transform properties */
+    }
+
+    /* Feedback Styles */
+    #feedback {
+        height: 80px;
+        border-radius: 3rem 0 0 0;
+    }
+
+    /* Input Hover Effect */
+    input:hover {
+        border-left: 10px black solid;
+        transform: scale(1.05); /* Scale up on hover */
+    }
+
+    /* Table Header Hover Effect */
+    th:hover {
+        color: black !important;
+        background-color: skyblue !important;
+        cursor: pointer; /* Added cursor pointer on hover for better user experience */
+        animation: colorChange 0.3s ease; /* Animation for color change */
+    }
+
+    @keyframes colorChange {
+        from {
+            color: white;
+        }
+        to {
+            color: black;
+        }
+    }
+
+    /* Body Hover Effect */
+    body {
+        background-image: url('images/image13.jpg'); /* Replace 'your-image-url.jpg' with your image URL */
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        transition: background-color 0.5s ease; /* Reduced transition duration for smoother effect */
+    }
+
+    body:hover {
+        background-color: bisque;
+        transition: background-color 0.5s ease; /* Reduced transition duration for smoother effect */
+        animation: shake 0.5s ease; /* Shake animation */
+    }
+
+    @keyframes shake {
+        0%,
+        100% {
+            transform: translateX(0);
+        }
+        25%,
+        75% {
+            transform: translateX(-5px);
+        }
+        50% {
+            transform: translateX(5px);
+        }
+    }
+</style>

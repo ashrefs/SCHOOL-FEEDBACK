@@ -1,0 +1,232 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Navbar Styles */
+#navbar {
+    height: 15.5vh;
+    width: 100%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    display: block;
+    background-color: #333; /* Dark background color */
+}
+
+#home-heading {
+    padding: 5%;
+    line-height: 100px;
+    font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: #ff4500; /* Orange color */
+    word-spacing: 15px;
+}
+
+#home-heading:hover {
+    color: #29f700;
+    transition: 1s; /* Faster transition */
+}
+
+#nav-list li a {
+    color: white; /* Dark text color */
+    font-size: 20px;
+}
+
+#nav-list li a:hover {
+    color: #ff4500; /* Orange color */
+    transition: 0.5s; /* Faster transition */
+    border-bottom: 2px #ff4500 solid;
+    padding-bottom: 36px;
+}
+#nav-list li:hover{
+    color: #29f700;
+}
+
+/*nav close*/
+
+#searchbox {
+    margin-top: 25%;
+    width: 400px;
+    height: 50px;
+    border: 3px #ff4500 solid;
+    border-radius: 5rem 0 0 5rem;
+    padding-left: 2%;
+    margin-left: 5%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+#search-button {
+    color: white;
+    background-color: #0000cd; /* Medium Blue color */
+    height: 50px;
+    width: 100px;
+    border: 3px #ff4500 solid;
+    border-radius: 0 5rem 5rem 0;
+}
+#searchbox-display{
+    width: 100%;
+    height: 100vh;
+    background:url(images/image3.jpg);
+    background-size: cover;
+}
+
+#search-button:hover {
+    background-color: #ee6a6a; /* Light Red color */
+    color: white;
+    border: 3px #fa8072 solid; /* Salmon color */
+}
+
+
+/* Image Styles */
+img {
+    width: 10%;
+    float: right;
+    margin-top: 18%;
+    margin-right: 15%;
+}
+
+/* School Name Styles */
+#school-name {
+    margin-left: 73%;
+    margin-top: 2%;
+    color: #ff4500; /* Orange color */
+    font-size: 50px;
+    word-spacing: 20px;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px #000000;
+}
+marquee{
+    margin-top: 8%;
+    color: white;
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+}
+#home-container1{
+    width: 100%;
+    height: 100vh;
+    border: 5px white solid;
+    background-color: blue;
+}
+#texts{
+    width: 60%;
+    padding: 3%;
+    word-spacing: 2px;
+    text-align: justify;
+    border: 2px solid #ea1d6f;
+    color: white;
+    display: inline-block;
+    margin-right: 10%;
+    float: right;
+}
+#texts2{
+    width: 60%;
+    padding: 3%;
+    word-spacing: 2px;
+    text-align: justify;
+    border: 2px solid #ea1d6f;
+    color: white;
+    display: inline-block;
+    float: right;
+    margin-right: 10%;
+}
+#home-container1 h3{
+    font-size: 35px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+#home-container2{
+    width: 100%;
+    height:800px;
+    background:url(images/image4.jpg);
+    background-size: cover;
+    border: 5px white solid;
+}
+#home-container3{
+    width: 100%;
+    height: 200px;
+    border: 2px solid white;
+    background-color: black;
+}
+#home-container3 h4{
+    color: white;
+    margin: 5%;
+    margin-top: 7.5%;
+    display: inline-block;
+}
+#home-container3 h3{
+    color: white;
+    float: right;
+    margin:5%;
+    margin-top: 7.5%;
+    font-size: medium;
+    
+}
+#home-container3 h5{
+    color: white;
+    float: right;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styles */
+.col-md-4,
+.col-sm-4,
+.col-xs-12 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Container Styles */
+.col-md-4,
+.col-sm-4,
+.col-xs-12 {
+    text-align: center;
+    margin-bottom: 20px;
+    background: url('images/image6.jpg') center center/cover no-repeat; /* Replace 'your-image-url.jpg' with your image URL */
+    padding: 20px; /* Add padding to the container */
+    color: #fff; /* Text color on top of the background */
+}
+/* Icon Styles */
+.icon_wrap {
+    display: inline-block;
+    width: 80px; /* Set a fixed width for the icon container */
+    height: 80px; /* Set a fixed height for the icon container */
+    background: url('images/image7.png') center center/cover no-repeat; /* Replace 'your-icon-image-url.jpg' with your icon image URL */
+    padding: 10px;
+    border-radius: 50%;
+}
+/* Icon Styles */
+.icon_wrap {
+    display: inline-block;
+    font-size: 36px;
+    color: #3498db; /* Icon color */
+    background-color: #ecf0f1; /* Icon background color */
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Statistics Styles */
+.stat_count {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* Count color */
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: white; /* Title color */
+}

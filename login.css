@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Changed font family for better compatibility */
+}
+/* Animation Styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to form */
+form {
+    animation: fadeIn 1s ease-out; /* Apply the fadeIn animation to the form */
+}
+
+/* Additional hover animation for the button */
+button:hover {
+    background-color: #2ecc71; /* Darkened button color on hover */
+    height: 45px; /* Increased button height on hover */
+    transform: scale(1.1); /* Scale up on hover */
+    transition: background-color 0.3s ease, height 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Additional hover animation for the input */
+input:hover {
+    background-color: #2980b9; /* Darkened input background color on hover */
+    transform: translateY(-5px); /* Move up on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+}
+body {
+    background: url('images/image11.jpg');
+    background-size: cover;
+}
+
+form {
+    text-align: center;
+    background-color: #3498db; /* Changed to a shade of blue */
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    margin-left: 34%;
+    margin-top: 10%;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Added box shadow for depth */
+}
+
+label {
+    font-size: 20px;
+    color: #fff; /* Changed label text color to white */
+}
+
+input {
+    width: 60%;
+    height: 7%;
+    border-radius: 2rem;
+    border: 2px #fff solid; /* Changed border color to white */
+    margin-top: 20px; /* Adjusted margin for better spacing */
+    padding: 10px; /* Added padding for better input appearance */
+    background-color: #3498db; /* Changed input background color to match the form */
+    color: #fff; /* Changed input text color to white */
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 20px; /* Adjusted margin for better spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff; /* Changed heading text color to white */
+}
+
+p {
+    margin-top: 20px; /* Adjusted margin for better spacing */
+    color: #fff; /* Changed paragraph text color to white */
+}
+
+button {
+    margin-top: 30px; /* Adjusted margin for better spacing */
+    width: 60%;
+    height: 40px; /* Increased button height for better visibility */
+    background-color: #27ae60; /* Changed button color to a shade of green */
+    border: 1px solid #000; /* Changed border color to black for contrast */
+    border-radius: 2rem;
+    font-size: large;
+    color: #fff; /* Changed button text color to white */
+}
+
+button:hover {
+    background-color: #2ecc71; /* Darkened button color on hover */
+    height: 45px; /* Increased button height on hover */
+}
+
+input:hover {
+    background-color: #2980b9; /* Darkened input background color on hover */
+}
+
+form:hover {
+    background-color: #218c74; /* Darkened form background color on hover */
+    transition: 1s; /* Reduced transition duration for smoother effect */
+}
